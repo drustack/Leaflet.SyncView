@@ -49,7 +49,7 @@ L.Handler.SyncView = L.Handler.extend({
         var latitude = $(e.data.options.latitude).val() ? $(e.data.options.latitude).val() : e.data._map.getCenter().lat;
         var longitude = $(e.data.options.longitude).val() ? $(e.data.options.longitude).val() : e.data._map.getCenter().lng;
         var zoom = $(e.data.options.zoom).val() ? $(e.data.options.zoom).val() : e.data._map.getZoom();
-        e.data._map.flyTo([latitude, longitude], zoom);
+        e.data._map.setView([latitude, longitude], zoom);
     },
 });
 
