@@ -42,7 +42,7 @@
                     <p>A sync view handler for Leaflet. Move the map or change the text input to see the sync effect.</p>
                 </div>
             </div>
-            <form class="row mb-3 leaflet-handler-syncview">
+            <form class="row mb-3">
                 <div class="col-md-4">
                     <label class="form-label">Latitude</label>
                     <input type="text" class="form-control latitude" value="51.505">
@@ -73,9 +73,9 @@
                 attribution: "&copy; <a href='https://openstreetmap.org/copyright'>OpenStreetMap contributors</a>"
             }).addTo(map);
             L.Handler.SyncView.mergeOptions({
-                latitude: ".leaflet-handler-syncview .latitude",
-                longitude: ".leaflet-handler-syncview .longitude",
-                zoom: ".leaflet-handler-syncview .zoom",
+                latitude: ".latitude",
+                longitude: ".longitude",
+                zoom: ".zoom",
             });
             map.syncView.enable();
         </script>

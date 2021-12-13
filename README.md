@@ -17,7 +17,7 @@ Design for [Drupal Leaflet Module](https://www.drupal.org/project/leaflet) integ
 
 This Leaflet handler don't provide any visual element, but using jQuery for bidirectional sync form input (e.g. for latitude, longitude and zoom) with current Leaflet view:
 
-    <form class="leaflet-handler-syncview">
+    <form>
         <input type="text" class="latitude">
         <input type="text" class="longitude">
         <input type="text" class="zoom">
@@ -34,9 +34,9 @@ This Leaflet handler don't provide any visual element, but using jQuery for bidi
         }).addTo(map);
         
         L.Handler.SyncView.mergeOptions({
-            latitude: ".leaflet-handler-syncview .latitude",
-            longitude: ".leaflet-handler-syncview .longitude",
-            zoom: ".leaflet-handler-syncview .zoom",
+            latitude: ".latitude",
+            longitude: ".longitude",
+            zoom: ".zoom",
         });
     
         map.syncView.enable();
