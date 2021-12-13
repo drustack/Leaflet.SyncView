@@ -1,0 +1,31 @@
+{
+    "author": "Wong Hoi Sing Edison <hswong3i@pantarei-design.com>",
+    "description": "A sync view handler for Leaflet",
+    "devDependencies": {
+        "jshint": "~2.13.1",
+        "sass": "~1.44.0",
+        "uglify-js": "~3.14.4"
+    },
+    "homepage": "https://github.com/hswong3i/Leaflet.SyncView",
+    "keywords": [
+        "leaflet",
+        "plugin",
+        "handler",
+        "sync"
+    ],
+    "license": "Apache-2.0",
+    "main": "src/L.Handler.SyncView.js",
+    "name": "@hswong3i/leaflet.syncview",
+    "readmeFilename": "README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hswong3i/Leaflet.SyncView.git"
+    },
+    "scripts": {
+        "build": "npm run jshint; npm run uglifyjs; npm run sass",
+        "jshint": "jshint src/L.Handler.SyncView.js",
+        "sass": "sass -s compressed src/L.Handler.SyncView.scss dist/L.Handler.SyncView.min.css",
+        "uglifyjs": "uglifyjs src/L.Handler.SyncView.js -c -m --source-map -o dist/L.Handler.SyncView.min.js"
+    },
+    "version": "0.0.1"
+}
