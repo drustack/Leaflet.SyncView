@@ -1,21 +1,21 @@
 # Leaflet.SyncView
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hswong3i/Leaflet.SyncView)](https://github.com/hswong3i/Leaflet.SyncView/tags)
-[![GitHub license](https://img.shields.io/github/license/hswong3i/Leaflet.SyncView)](https://github.com/hswong3i/Leaflet.SyncView/blob/master/LICENSE)
-[![npm](https://img.shields.io/npm/v/@hswong3i/leaflet.syncview)](https://www.npmjs.com/package/@hswong3i/leaflet.syncview)
-[![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/hswong3i/Leaflet.SyncView)](https://www.jsdelivr.com/package/npm/@hswong3i/leaflet.syncview)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/drustack/Leaflet.SyncView)](https://github.com/drustack/Leaflet.SyncView/tags)
+[![GitHub license](https://img.shields.io/github/license/drustack/Leaflet.SyncView)](https://github.com/drustack/Leaflet.SyncView/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/@drustack/leaflet.syncview)](https://www.npmjs.com/package/@drustack/leaflet.syncview)
+[![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/drustack/Leaflet.SyncView)](https://www.jsdelivr.com/package/npm/@drustack/leaflet.syncview)
 
-A sync view handler for Leaflet.
+A sync view control for Leaflet.
 
 Design for [Drupal Leaflet Module](https://www.drupal.org/project/leaflet) integration.
 
 ## Demo
 
-<https://hswong3i.github.io/Leaflet.SyncView/>
+<https://drustack.github.io/Leaflet.SyncView/>
 
 ## Usage
 
-This Leaflet handler don't provide any visual element, but using jQuery for bidirectional sync form input (e.g. for latitude, longitude and zoom) with current Leaflet view:
+This Leaflet control don't provide any visual element, but using jQuery for bidirectional sync form input (e.g. for latitude, longitude and zoom) with current Leaflet view:
 
     <form>
         <input type="text" class="latitude">
@@ -33,21 +33,19 @@ This Leaflet handler don't provide any visual element, but using jQuery for bidi
             attribution: "&copy; <a href='https://openstreetmap.org/copyright'>OpenStreetMap contributors</a>"
         }).addTo(map);
         
-        L.Handler.SyncView.mergeOptions({
-            latitude: ".latitude",
-            longitude: ".longitude",
-            zoom: ".zoom",
-        });
-    
-        map.syncView.enable();
+        L.control.syncview({
+            latitudeSelector: ".latitude",
+            longitudeSelector: ".longitude",
+            zoomSelector: ".zoom",
+        }).addTo(map);
     </script>
 
 ## Include via CDN
 
 Leaflet.SyncView is available through [jsDelivr](https://www.jsdelivr.com/):
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hswong3i/leaflet.syncview/dist/L.Handler.SyncView.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@hswong3i/leaflet.syncview/dist/L.Handler.SyncView.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@drustack/leaflet.syncview/dist/L.Control.SyncView.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@drustack/leaflet.syncview/dist/L.Control.SyncView.min.js"></script>
 
 ## Development
 
