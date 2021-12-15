@@ -1,6 +1,6 @@
 {
     "author": "Wong Hoi Sing Edison <hswong3i@pantarei-design.com>",
-    "description": "A sync view handler for Leaflet",
+    "description": "A sync view control for Leaflet",
     "devDependencies": {
         "jshint": "~2.13.1",
         "sass": "~1.44.0",
@@ -10,7 +10,7 @@
     "keywords": [
         "leaflet",
         "plugin",
-        "handler",
+        "control",
         "sync"
     ],
     "license": "Apache-2.0",
