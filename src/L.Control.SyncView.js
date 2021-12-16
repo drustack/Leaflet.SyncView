@@ -21,10 +21,10 @@
         module.exports = factory(require("leaflet"));
     }
 
-    if (typeof window !== "undefined" && window.L) {
-        window.L.Control.SyncView = factory(L);
+    if (typeof window !== "undefined" && window.jQuery && window.L) {
+        window.L.Control.SyncView = factory(jQuery, L);
     }
-}(function (L) {
+}(function ($, L) {
     SyncView = L.Control.extend({
         options: {
             latitudeSelector: null,
