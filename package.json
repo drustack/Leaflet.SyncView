@@ -27,5 +27,5 @@
         "sass": "sass -s compressed src/L.Control.SyncView.scss dist/L.Control.SyncView.min.css",
         "uglifyjs": "uglifyjs src/L.Control.SyncView.js -c -m --source-map -o dist/L.Control.SyncView.min.js"
     },
-    "version": "0.0.5"
+    "version": "1.0.0"
 }
