@@ -79,7 +79,7 @@
         },
     });
 
-    L.control.syncview = function(options) {
+    L.control.syncView = function(options) {
         return new SyncView(options);
     };
 

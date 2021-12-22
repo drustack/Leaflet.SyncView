@@ -9,9 +9,14 @@ A sync view control for Leaflet.
 
 Design for [Drupal Leaflet Module](https://www.drupal.org/project/leaflet) integration.
 
+## Requirement
+
+  - [Leaflet](https://github.com/Leaflet/Leaflet) 1.7.1+
+  - [jQuery](https://github.com/jquery/jquery) 3.6.0+
+
 ## Demo
 
-<https://drustack.github.io/Leaflet.SyncView/>
+  - <https://drustack.github.io/Leaflet.SyncView/>
 
 ## Usage
 
@@ -33,7 +38,7 @@ This Leaflet control don't provide any visual element, but using jQuery for bidi
             attribution: "&copy; <a href='https://openstreetmap.org/copyright'>OpenStreetMap contributors</a>"
         }).addTo(map);
         
-        L.control.syncview({
+        L.control.syncView({
             latitudeSelector: ".latitude",
             longitudeSelector: ".longitude",
             zoomSelector: ".zoom",
