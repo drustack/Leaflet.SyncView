@@ -2,7 +2,7 @@
 
 ## 1.10.0 - TBC
 
-## 1.9.0 - 2024-07-23
+## 1.9.2 - 2024-07-23
 
 - Support [Leaflet](https://github.com/Leaflet/Leaflet) 1.9.4+
 - Support [jQuery](https://github.com/jquery/jquery) 3.7.1+

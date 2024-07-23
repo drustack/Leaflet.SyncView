@@ -2,10 +2,10 @@
     "author": "Wong Hoi Sing Edison <hswong3i@pantarei-design.com>",
     "description": "A sync view control for Leaflet",
     "devDependencies": {
-        "eslint": "~8.5",
+        "eslint": "~9.7",
         "http-server": "~14.1",
-        "sass": "~1.44",
-        "uglify-js": "~3.14"
+        "sass": "~1.77",
+        "uglify-js": "~3.19"
     },
     "homepage": "https://github.com/drustack/Leaflet.SyncView",
     "keywords": [
@@ -34,5 +34,5 @@
         "uglifyjs": "uglifyjs src/L.Control.SyncView.js -c -m --source-map -o dist/L.Control.SyncView.min.js"
     },
     "style": "dist/L.Control.SyncView.min.css",
-    "version": "1.1.1"
+    "version": "1.9.2"
 }
