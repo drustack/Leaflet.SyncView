@@ -57,12 +57,20 @@
         },
 
         _pullView: function(e) {
-            var _latlng = this._map.getCenter();
-            var _zoom = this._map.getZoom();
+            const _latlng = this._map.getCenter();
+            const _zoom = this._map.getZoom();
 
-            $(this.options.latitudeSelector).val(_latlng.lat);
-            $(this.options.longitudeSelector).val(_latlng.lng);
+            const lat = parseFloat(_latlng.lat).toFixed(6);
+            const lng = parseFloat(_latlng.lng).toFixed(6);
+
+            $(this.options.latitudeSelector).val(lat);
+            $(this.options.longitudeSelector).val(lng);
             $(this.options.zoomSelector).val(_zoom);
+
+            // Also update the proximity-origin-summary Lat and Lon elements.
+            $('.geofield-lat-summary').text(lat);
+            $('.geofield-lon-summary').text(lng);
+
         },
         
         _pushView: function(e) {
