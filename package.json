@@ -34,5 +34,5 @@
         "uglifyjs": "uglifyjs src/L.Control.SyncView.js -c -m --source-map -o dist/L.Control.SyncView.min.js"
     },
     "style": "dist/L.Control.SyncView.min.css",
-    "version": "1.9.2"
+    "version": "1.9.3"
 }

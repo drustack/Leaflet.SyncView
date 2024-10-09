@@ -2,6 +2,10 @@
 
 ## 1.10.0 - TBC
 
+## 1.9.3 - 2024-10-09
+
+- Parsing of Lat and Lon to 6 digit float (Fixes https://github.com/drustack/Leaflet.SyncView/pull/1)
+
 ## 1.9.2 - 2024-07-23
 
 - Support [Leaflet](https://github.com/Leaflet/Leaflet) 1.9.4+

@@ -60,8 +60,8 @@
             var _latlng = this._map.getCenter();
             var _zoom = this._map.getZoom();
 
-            $(this.options.latitudeSelector).val(_latlng.lat);
-            $(this.options.longitudeSelector).val(_latlng.lng);
+            $(this.options.latitudeSelector).val(parseFloat(_latlng.lat).toFixed(6));
+            $(this.options.longitudeSelector).val(parseFloat(_latlng.lng).toFixed(6));
             $(this.options.zoomSelector).val(_zoom);
         },
         
